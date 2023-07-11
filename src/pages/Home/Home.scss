@@ -1,0 +1,9 @@
+main {
+  padding: 48px 82px;
+  @media only screen and (max-width: 900px) {
+    padding: 42px;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 24px;
+  }
+}

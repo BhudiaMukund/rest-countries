@@ -1,0 +1,46 @@
+nav {
+  color: var(--InputText);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  .input-field {
+    background: var(--ElementBackground);
+    width: 480px;
+    border-radius: 6px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.15);
+    input {
+      &::placeholder {
+        color: var(--InputText);
+      }
+    }
+  }
+
+  .input-field * {
+    color: var(--InputText);
+    font-family: inherit;
+  }
+
+  .select {
+    width: 200px;
+    background: var(--ElementBackground);
+    border-radius: 6px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.15);
+  }
+  .select * {
+    color: var(--InputText);
+    font-family: inherit;
+  }
+  #filter-select-label {
+    color: var(--InputText);
+  }
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    .input-field {
+      width: 100%;
+    }
+  }
+}

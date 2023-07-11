@@ -1,0 +1,16 @@
+section.countries {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 76px 72px;
+  margin-top: 46px;
+  @media only screen and (max-width: 900px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 52px;
+  }
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media only screen and (max-width: 450px) {
+    grid-template-columns: 1fr;
+  }
+}

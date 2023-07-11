@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: color 10ms ease-in-out, background-color 100ms ease-in-out;
+}
+
+:root {
+  --ElementBackground: hsl(209, 23%, 22%);
+  --Background: hsl(207, 26%, 17%);
+  --Text: hsl(0, 0%, 100%);
+  --InputText: hsl(0, 0%, 100%);
+}
+
+body.light {
+  --ElementBackground: hsl(0, 0%, 100%);
+  --Background: hsl(0, 0%, 98%);
+  --Text: hsl(200, 15%, 8%);
+  --InputText: hsl(0, 0%, 52%);
+}
+
+body {
+  font-family: "Nunito Sans";
+  background: var(--Background);
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.link {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(207, 26%, 12%) hsl(209, 23%, 35%);
+}
+
+/* Chrome, Edge, and Safari */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: hsl(207, 26%, 12%);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: hsl(209, 23%, 35%);
+  border-radius: 8px;
+}
+
+// Scrollbar for light Theme
+
+body.light {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(207, 26%, 90%) hsl(209, 23%, 50%);
+}
+
+/* Chrome, Edge, and Safari */
+body.light::-webkit-scrollbar {
+  width: 12px;
+}
+
+body.light::-webkit-scrollbar-track {
+  background: hsl(207, 26%, 90%);
+}
+
+body.light::-webkit-scrollbar-thumb {
+  background-color: hsl(209, 23%, 50%);
+  border-radius: 8px;
+}
